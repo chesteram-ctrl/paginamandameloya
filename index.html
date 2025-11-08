@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="es">
 <head>
 <meta charset="utf-8" />
@@ -36,7 +36,7 @@
   ul{margin:8px 0 0 20px}
 
   .row{display:flex;gap:16px;flex-wrap:wrap}
-  .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(6,20,40,0.04);flex:1;min-width:220px}
+  .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(6,20,40,0.04);flex:1;min-width:260px}
 
   /* timeline / steps */
   .steps{display:grid;gap:12px;margin-top:16px}
@@ -128,7 +128,7 @@
           <div class="actions">
             <button class="btn-primary" onclick="document.querySelector('[data-tab=calc]').click();setTimeout(()=>document.getElementById('peso').focus(),200)">Calcular</button>
             <a class="btn-wa"
-               href="https://wa.me/5057XXXXXXX?text=Hola%20Mand%C3%A1meloYa%2C%20quiero%20cotizar%20env%C3%ADo%20a%C3%A9reo%20-%206.50%20%24%2Flb.%20Mi%20peso%20es%3A%20%5BINGRESA%20TU%20PESO%5D%20lb"
+               href="https://wa.me/50575436800?text=Hola%20Mand%C3%A1meloYa%2C%20quiero%20cotizar%20env%C3%ADo%20a%C3%A9reo%20-%206.50%20%24%2Flb.%20Mi%20peso%20es%3A%20%5BINGRESA%20TU%20PESO%5D%20lb"
                target="_blank" rel="noopener">📲 WhatsApp Aéreo</a>
           </div>
         </div>
@@ -140,7 +140,7 @@
           <div class="actions">
             <button class="btn-primary" onclick="document.querySelector('[data-tab=calc]').click();setTimeout(()=>document.getElementById('peso').focus(),200)">Calcular</button>
             <a class="btn-wa"
-               href="https://wa.me/50578047188?text=Hola%20Mand%C3%A1meloYa%2C%20quiero%20cotizar%20env%C3%ADo%20mar%C3%ADtimo%20-%202.75%20%24%2Flb.%20Mi%20peso%20es%3A%20%5BINGRESA%20TU%20PESO%5D%20lb"
+               href="https://wa.me/50575436800?text=Hola%20Mand%C3%A1meloYa%2C%20quiero%20cotizar%20env%C3%ADo%20mar%C3%ADtimo%20-%202.75%20%24%2Flb.%20Mi%20peso%20es%3A%20%5BINGRESA%20TU%20PESO%5D%20lb"
                target="_blank" rel="noopener">📲 WhatsApp Marítimo</a>
           </div>
         </div>
@@ -264,15 +264,45 @@
     <!-- 🔹 INFORMACIÓN DE PRODUCTOS (ENTRE FAQ Y CONTACTO) -->
     <section id="panel-productos" class="panel" data-panel="productos">
       <h2>Información de productos</h2>
-      <p class="muted">Aquí podrás consultar detalles sobre qué productos se pueden enviar, restricciones y recomendaciones.</p>
+      <p class="muted">Revisa lo que NO podemos enviar y el proceso especial para productos HAZMAT.</p>
 
-      <div class="card" style="margin-top:10px;">
-        <p>Estamos preparando esta sección para ayudarte mejor.</p>
-        <p class="muted">Si necesitás asistencia inmediata:</p>
+      <div class="row" style="margin-top:10px">
+        <!-- Tarjeta 1: No permitidos -->
+        <div class="card">
+          <h3>Artículos NO permitidos</h3>
+          <p class="muted">Por seguridad y normativas aduaneras, MandámeloYa <strong>NO</strong> permite enviar:</p>
+          <ul>
+            <li><strong>No imitaciones y réplicas</strong> (productos falsificados de marcas registradas)</li>
+            <li><strong>No explosivos</strong> e inflamables (fuegos artificiales, pegamento, tanques de gas)</li>
+            <li><strong>No baterías puras</strong></li>
+            <li><strong>No vapes</strong> y dispositivos de fumar electrónicos</li>
+            <li><strong>No dinero en efectivo</strong></li>
+            <li><strong>No equipos/máquinas para minería de bitcoin</strong></li>
+            <li><strong>No armas</strong> (desarmadas, de juguete, de caza, paintball, armas blancas como cuchillos y espadas)</li>
+            <li><strong>No equipo militar o policial</strong> (esposas, uniformes, radios de comunicación)</li>
+            <li><strong>No drogas</strong> y sustancias ilícitas</li>
+            <li><strong>No hookahs</strong> y sus accesorios</li>
+            <li><strong>No bebidas alcohólicas</strong></li>
+          </ul>
+          <p class="muted" style="margin-top:8px">El incumplimiento puede resultar en retención de mercancía, multas o inhabilitación del servicio.</p>
+        </div>
 
-        <a class="btn-wa" href="https://wa.me/50578047188?text=Hola%20MandámeloYa,%20quiero%20información%20sobre%20un%20producto." target="_blank" rel="noopener">
-          📲 Consultar por WhatsApp
-        </a>
+        <!-- Tarjeta 2: HAZMAT -->
+        <div class="card">
+          <h3>Proceso para Paquetes HAZMAT</h3>
+          <p class="muted">Aplicable a: perfumería y baterías de litio (<em>excepto UN 3481</em>).</p>
+          <ul>
+            <li><strong>Salidas:</strong> se gestionan los días <strong>VIERNES</strong>.</li>
+            <li><strong>En encomienda con HAZMAT:</strong> se retira y coloca en empaque separado, manteniendo el mismo número de entrada.</li>
+            <li><strong>Drop Off:</strong> se indicará al cliente el procedimiento a seguir.</li>
+            <li><strong>Importante:</strong> informá si tu paquete contiene HAZMAT para su correcta declaración y procesamiento.</li>
+          </ul>
+          <p class="muted"><strong>Clasificaciones mencionadas:</strong> UN 2800, UN 3480, UN 3090, UN 3091.</p>
+        </div>
+      </div>
+
+      <div class="actions" style="margin-top:12px">
+        <a class="btn-wa" href="https://wa.me/50575436800?text=Hola%20Mand%C3%A1meloYa%2C%20tengo%20una%20consulta%20sobre%20productos%20no%20permitidos%20o%20HAZMAT." target="_blank" rel="noopener">📲 Consultar por WhatsApp</a>
       </div>
     </section>
 
@@ -281,9 +311,12 @@
       <h2>Contacto</h2>
       <div class="row">
         <div class="card">
-          <p><strong>WhatsApp:</strong> +505 7XX-XXXX</p>
-          <p><strong>Oficina:</strong> Managua, Nicaragua</p>
+          <p><strong>WhatsApp:</strong> +505 7543-6800</p>
+          <!-- Dirección física eliminada por solicitud -->
           <p><strong>Email:</strong> mandameloya.clientes@gmail.com</p>
+          <div class="actions" style="margin-top:8px">
+            <a class="btn-wa" href="https://wa.me/50575436800?text=Hola%20Mand%C3%A1meloYa%2C%20necesito%20informaci%C3%B3n%20por%20favor." target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+          </div>
         </div>
         <form class="card" id="contactForm" action="#" onsubmit="event.preventDefault();alert('Formulario enviado (demo)');">
           <label class="muted">Nombre</label><input required>
@@ -358,3 +391,4 @@ document.getElementById('toContact')?.addEventListener('click', ()=>{ document.q
 </script>
 </body>
 </html>
+
